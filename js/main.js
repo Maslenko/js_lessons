@@ -7,3 +7,17 @@
 		console.info("То же что и log");
 		console.error("Привет от JS. Ошибка!");
 		console.warn("Уведомление от JS.");
+
+//Переменные 
+
+/*var num; 
+num = 5;*/
+
+//var num = 5;
+const num = 7; //константу переопределить нельзя
+//num = 7; // переопределить значение
+console.log("Переменная: " + num + "."); //Объединение строк
+
+var number; 
+number = 5; 
+console.log("Другая переменая: " + number);  
