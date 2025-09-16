@@ -1,4 +1,12 @@
+body {
+	background-color: black; 
+	color: lightgrey;
+}
+
 h2 {
-	color: darkblue;
-	font-style: italic;
+	color: lightblue;
+}
+
+pre {
+	color: lightgreen;
 }

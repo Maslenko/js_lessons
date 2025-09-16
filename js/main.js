@@ -20,4 +20,13 @@ console.log("Переменная: " + num + "."); //Объединение ст
 
 var number; 
 number = 5; 
-console.log("Другая переменая: " + number);  
+console.log("Другая переменая: " + number); 
+
+var word;
+word = "Дремучий лес";
+
+var number;
+number = true; //boolean 
+
+var num_1 = 3; //число
+var num_2 = "3"; //строка. Число + строка = строка 33 
