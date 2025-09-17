@@ -30,3 +30,51 @@ number = true; //boolean
 
 var num_1 = 3; //число
 var num_2 = "3"; //строка. Число + строка = строка 33 
+
+//Математические действия
+
+var number_1 = 5.4; 
+var number_2 = 15; 
+
+/* var res = number_1 - number_2; //Способ 1
+
+console.log("Вычитание: " + res); */
+
+/* console.log("Вычитание: " + (number_1 - number_2)); //Способ 2 */
+
+console.log("Результат: " + (number_1 / number_2));
+
+var number_3 = 5; 
+//number_3 = number_3 + 7; 
+//number_3 += 7;
+//number_3 *= 7;
+//number_3 -= 7;
+//number_3 /= 7;
+//number_3 +=1;
+//number_3++; //Если нужно добавить единицу 
+number_3--; //Если нужно отнять единицу      
+console.log("Результат: " + number_3); 
+
+var str_1 = "12"; //Это не числа, это строка
+var str_2 = "2"; 
+console.log("Результат: " + (str_1 + str_2)); 
+
+var str_1 = Number("12"); //Теперь это число 
+var str_2 = Number("2"); 
+console.log("Результат: " + (str_1 + str_2)); 
+
+console.log("Math: " + Math.PI); //Выводится число Пи. 
+console.log("Math: " + Math.E); //Число Е.
+console.log("Math: " + Math.min(4, 6, 8, 1, 12, 3, 2)); //Находит минимальное число.
+console.log("Math: " + Math.max(4, 6, 8, 1, 12, 3, 2));   
+
+
+
+
+
+
+
+
+
+
+
