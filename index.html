@@ -12,9 +12,9 @@
 	
 	<noscript>Включи свой JavaScript!!!</noscript>
 
-	<pre>
-		<code>&lt;noscript&gt;Включи свой JavaScript!!!&lt;/noscript&gt;</code>
-	</pre>
+		<pre>
+			<code>&lt;noscript&gt;Включи свой JavaScript!!!&lt;/noscript&gt;</code>
+		</pre>
 
 	<h2>Переменные</h2>
 
@@ -103,6 +103,48 @@
 	</pre>	
 
 	<h2>Условные операторы</h2>
+
+	<pre>
+		<code>
+			/* var zahl = 15; 
+			if(5 == 5) {
+				console.log("Правильно") 
+			} */
+
+			var zahl = 15;
+			var isHasHouse = true; 
+
+			if(zahl == 15 && isHasHouse == true) { /* || - Эти две палки обозначают "ИЛИ". && - Обозначают "И". */ 
+				console.log("OK");
+			} else if (zahl < 10) {
+				console.log("Ok!"); 
+			} else if (zahl == 7) {
+				console.log ("Равен 7")
+			} else if (zahl >= 15) {
+				console.log("Zahl >= 15!"); 
+			} else {
+				console.log("Error!"); 
+			}
+
+
+			var stroka = "word"; /* swich - удобен, когда нужно проверить переменную на совпадение. */
+
+			switch(stroka) {
+				case "4": 
+					console.log("Переменная со значением 4");
+					break; 
+				case "45": 
+					console.log("Переменная со значением 45");
+					break; 	
+				case "word": 
+					console.log("Переменная со значением -word-");
+					break; 
+				default:
+					console.log("Default");
+					break;  		
+			}
+		</code>
+	</pre>
 
 
 	<script type="text/javascript" src="js/main.js"></script>
