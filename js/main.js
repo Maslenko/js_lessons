@@ -68,8 +68,45 @@ console.log("Math: " + Math.E); //Число Е.
 console.log("Math: " + Math.min(4, 6, 8, 1, 12, 3, 2)); //Находит минимальное число.
 console.log("Math: " + Math.max(4, 6, 8, 1, 12, 3, 2));   
 
+//Условные операторы 
+
+/* var zahl = 15; 
+if(5 == 5) {
+	console.log("Правильно") 
+} */
+
+var zahl = 15;
+var isHasHouse = true; 
+
+if(zahl == 15 && isHasHouse == true) { /* || - Эти две палки обозначают "ИЛИ". && - Обозначают "И". */ 
+	console.log("OK");
+} else if (zahl < 10) {
+	console.log("Ok!"); 
+} else if (zahl == 7) {
+	console.log ("Равен 7")
+} else if (zahl >= 15) {
+	console.log("Zahl >= 15!"); 
+} else {
+	console.log("Error!"); 
+}
 
 
+var stroka = "word"; /* swich - удобен, когда нужно проверить переменную на совпадение. */
+
+switch(stroka) {
+	case "4": 
+		console.log("Переменная со значением 4");
+		break; 
+	case "45": 
+		console.log("Переменная со значением 45");
+		break; 	
+	case "word": 
+		console.log("Переменная со значением -word-");
+		break; 
+	default:
+		console.log("Default");
+		break;  		
+}
 
 
 
