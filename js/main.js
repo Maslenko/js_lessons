@@ -108,8 +108,24 @@ switch(stroka) {
 		break;  		
 }
 
+//Массивы данных. Одномерные и многомерные массивы
 
+var arr = [5, true, "stroka", 5.7, 0, -100];
+console.log(arr);
+arr[3] = "word"; // было "stroka" - стало "word"
+console.log(arr[3]); // 0 - номер элемента в массиве 
+console.log(arr.length); // количество элементов 
 
+//Многомерные массивы 
+
+//var matrix = [[], [], []]; //Массив в котором еще три массива 
+
+var matrix = [
+	[4, 6, 8], ["stroka", 5.7], [0, -100]
+]; 
+
+matrix[1][0] = 90; 
+console.log(matrix); 
 
 
 
