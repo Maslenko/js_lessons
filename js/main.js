@@ -127,6 +127,77 @@ var matrix = [
 matrix[1][0] = 90; 
 console.log(matrix); 
 
+//Циклы в JavaScript. Операторы циклов 
+
+for(var a = 100; a > 5; a /= 2) { //Цикл будет длиться пока "a" будет больше "5". Переменная каждый цикл будет делится на 2. 
+	console.log(a);
+}
+
+
+var j = 0; 
+while(j < 10) {
+	console.log(j)
+	j++;
+} 
+
+var b = 1000;
+while(b > 100) {
+	console.log(b)
+	b -= 100; 
+}
+
+var x = 0; 
+do {
+	console.log(x); 
+	x++; 
+}	while(x < 15);
+
+
+//for(var d = 10; d <= 20; d += 2) {
+//	if(d > 15)
+//		break;  
+
+//	console.log(d);
+//} 
+
+/* оператор break позволяет полностью выйти из цикла. 
+оператор continue позволяет пропустить определенную итерацию. */
+
+
+for(var d = 10; d <= 20; d++) {
+	if(d % 2 == 0)
+		continue; 
+
+	console.log(d);
+} 
+
+//работа с массивами 
+
+/*var array = [5, 7, 3, 8, 9, "stroka"]; 
+
+for(var f = 0; f < array.length; f++) {
+	console.log("Элемент " + f + ": " + array[f]);
+}*/
+
+var array = [5, 7, 3, 8, 9, 91]; 
+
+for(var f = 0; f < array.length; f++) {
+	console.log("Элемент " + (f + 1) + ": " + array[f]);
+}
+
+
+var array = [5, 7, 3, 8, 9, 91]; 
+
+for(var f = 0; f < array.length; f++) {
+	
+	array[f] *= 2;
+	console.log("Элемент " + (f + 1) + ": " + array[f]);
+}
+
+
+
+
+
 
 
 
