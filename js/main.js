@@ -194,11 +194,31 @@ for(var f = 0; f < array.length; f++) {
 	console.log("Элемент " + (f + 1) + ": " + array[f]);
 }
 
+// Всплывающие окна (alert, prompt, confirm)
 
+alert ("Задолбали всплывающие окна..");
+alert ("Они могут вылазить бесконечно...");
+alert ("Та закрой уже!");
 
+//var data = confirm ("Хочешь 1000 евро?");
+//console.log(data); 
 
+var data = confirm ("Хочешь 1000 евро?");
+if(data) {
+	alert("И я хочу."); 
+} else {
+	alert("А зря..");
+}
 
+var weight = prompt("Скажите сколько Вы весите", 0);
+console.log(weight); 
 
-
+var person = null; 
+if(confirm("Хотите на Марс?")) {
+	person = prompt("Введите Ваше имя");
+	alert("Отлично, " + person + "! Летим!");
+} else {
+	alert("Ну и сидите дома!"); 
+}
 
 
