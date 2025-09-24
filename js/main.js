@@ -196,7 +196,7 @@ for(var f = 0; f < array.length; f++) {
 
 // Всплывающие окна (alert, prompt, confirm)
 
-alert ("Задолбали всплывающие окна..");
+/* alert ("Задолбали всплывающие окна..");
 alert ("Они могут вылазить бесконечно...");
 alert ("Та закрой уже!");
 
@@ -219,6 +219,34 @@ if(confirm("Хотите на Марс?")) {
 	alert("Отлично, " + person + "! Летим!");
 } else {
 	alert("Ну и сидите дома!"); 
+} */
+
+//Функции в языке JavaScript
+
+/*function info() {
+	console.log("Привет!");
+	console.log("Это функция.");
 }
+
+info(); //Вызываем функцию. 
+info(); //Можно выводить много раз. 
+info();*/
+
+/*function info(word) {
+	console.log(word + "!"); 
+}
+
+function summa(a, b) {
+	var res = a + b;
+	//console.log(res);
+	info(res); //внутри функции можно вызвать другую функцию  
+}
+
+info("Можно вставить любое значение"); 
+summa(5, 10);*/
+
+
+
+
 
 
