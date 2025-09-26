@@ -287,6 +287,26 @@ info(peremennaya);
 
 console.log(peremennaya + " Глобальная переменная");
 
+//События и обработчик событий в JavaScript 
+var counter = 0; 
+
+function onClickButton(element) {
+	alert('Запуск произведён!');
+	counter++; 
+	console.log(element.name);
+	console.log(counter); 
+	console.log(element.onclick); 
+	element.innerHTML = "Нажал: " + counter; 
+	element.style.cssText = "border-radius: 5px; border: 0; font-size: 20px";
+	element.style.background = "red";
+	element.style.color = "blue";   
+}
+
+function onInput(element) {
+		if(element.value == 'Hello')
+			alert("И тебе привет!");
+	console.log(element.value); 
+}
 
 
 

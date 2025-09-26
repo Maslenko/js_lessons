@@ -341,6 +341,23 @@
 
 			console.log(peremennaya + " Глобальная переменная");
 
+	<h2>События и обработчик событий в JavaScript</h2>	
+	
+	<!--<button onclick="alert('Запуск произведён!')">Пуск!</button>-->	
+	<button name="nameButton" onclick="onClickButton(this)">Пуск!</button>
+	<p onclick="onClickButton()">Простой текст тоже можно нажать. Пуск!</p>
+	<button ondblclick="onClickButton()">Нажать два раза</button>
+	<br>
+	<br>
+	<button onmouseover="onClickButton()">Просто наведи мышкой</button>
+	<br>
+	<br>
+	<button onmouseout="onClickButton()">Уберёшь курсор и кнопка нажмётся</button>
+	<br>
+	<br>
+	<input oninput="onInput(this)" type="" name="">
+	<br>
+	<br>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
