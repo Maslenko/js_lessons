@@ -276,7 +276,70 @@
 	</pre>	
 
 	<h2>Функции в языке JavaScript</h2>
-	
+
+			/*function info() {
+				console.log("Привет!");
+				console.log("Это функция.");
+			}
+
+			info(); //Вызываем функцию. 
+			info(); //Можно выводить много раз. 
+			info();*/
+
+			/*function info(word) {
+				console.log(word + "!"); 
+			}
+
+			function summa(a, b) {
+				var res = a + b;
+				//console.log(res);
+				info(res); //внутри функции можно вызвать другую функцию  
+			}
+
+			info("Можно вставить любое значение"); 
+			summa(5, 10);*/
+
+			/*function summa(mass) {
+				var sum = 0; 
+				for(var i = 0; i < mass.length; i++) 
+					sum += mass[i];
+				console.log(sum);  	
+			}
+
+			var massiv = [6, 8, 1];
+			var massiv_2 = [6, 8, 1, 7, 1, 5, 4];
+			var massiv_3 = [22, 3, 1983]; 
+
+			summa(massiv); 
+			summa(massiv_2);
+			summa(massiv_3); */ 
+
+			function summa(mass) {
+				var sum = 0; 
+				for(var i = 0; i < mass.length; i++) 
+					sum += mass[i];
+				return sum;  	
+			}
+
+			var massiv = [6, 8, 1];
+			var massiv_2 = [6, 8, 1, 7, 1, 5, 4];
+			var massiv_3 = [22, 3, 1983]; 
+
+			var res = summa(massiv_2); 
+			console.log("Результат: " + res);  
+
+			//Локальные и глобальные переменные (локальная П. видна только внутри функции)
+
+			var peremennaya = 10;  
+
+			function info() {
+				var peremennaya = 20; 
+				console.log(peremennaya + " Локальная переменная. Видна только в пределах самой функции."); 
+			}
+
+			info(peremennaya);  
+
+			console.log(peremennaya + " Глобальная переменная");
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

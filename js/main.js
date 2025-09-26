@@ -245,7 +245,47 @@ function summa(a, b) {
 info("Можно вставить любое значение"); 
 summa(5, 10);*/
 
+/*function summa(mass) {
+	var sum = 0; 
+	for(var i = 0; i < mass.length; i++) 
+		sum += mass[i];
+	console.log(sum);  	
+}
 
+var massiv = [6, 8, 1];
+var massiv_2 = [6, 8, 1, 7, 1, 5, 4];
+var massiv_3 = [22, 3, 1983]; 
+
+summa(massiv); 
+summa(massiv_2);
+summa(massiv_3); */ 
+
+function summa(mass) {
+	var sum = 0; 
+	for(var i = 0; i < mass.length; i++) 
+		sum += mass[i];
+	return sum;  	
+}
+
+var massiv = [6, 8, 1];
+var massiv_2 = [6, 8, 1, 7, 1, 5, 4];
+var massiv_3 = [22, 3, 1983]; 
+
+var res = summa(massiv_2); 
+console.log("Результат: " + res);  
+
+//Локальные и глобальные переменные (локальная П. видна только внутри функции)
+
+var peremennaya = 10;  
+
+function info() {
+	var peremennaya = 20; 
+	console.log(peremennaya + " Локальная переменная. Видна только в пределах самой функции."); 
+}
+
+info(peremennaya);  
+
+console.log(peremennaya + " Глобальная переменная");
 
 
 
