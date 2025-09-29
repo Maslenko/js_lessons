@@ -308,5 +308,40 @@ function onInput(element) {
 	console.log(element.value); 
 }
 
+//Управление HTML и обработка форм при помощи JS
+
+var text = document.getElementById('text');
+text.title = "New Text";
+console.log(text.title);
+text.style.color = "lightgreen";
+text.style.backgroundColor = "grey";
+
+//text.innerHTML = "Новые<br>стринги"; //Изменился текст на этот текст. 
+//document.getElementById('text').style.color = "blue";  
+
+//var spans = document.getElementsByTagName('span'); 
+var spans = document.getElementsByClassName('simple-text'); 
+
+//Формы
+
+for(var e = 0; e < spans.length; e++) {
+	console.log(spans[e].innerHTML); 
+}
+
+function checkForm(el) {
+var name = document.getElementById('name').value; 
+	console.log(name); 
+	return false; //Страница не перезагрузится, пока не будет возвращено true.
+}
+
+
+
+
+
+
+
+
+
+
 
 

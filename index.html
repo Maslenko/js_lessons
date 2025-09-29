@@ -361,6 +361,34 @@
 	<input oninput="onInput(this)" type="" name="">
 	<br>
 	<br>
+	
+	<h2>Управление HTML и обработка форм при помощи JS</h2>
+
+	<p id="text">Тут текст всякий, зелёный. Всякости разные.</p>
+
+	<span class="simple-text">Море волнуется 1</span>
+	<span class="simple-text">Море волнуется 2</span>
+	<span class="simple-text">Море волунется 3</span>
+	<br>
+
+	<h3>Формошлёп 1</h3>
+
+	<form id="main-form" onsubmit="return checkForm(this)" method="post">
+		<label for="name">Имя:</label>
+		<input type="text" name="name" placeholder="Имя" id="name"><br><br>
+		<label for="password">Пароль:</label>
+		<input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+		<label for="repass">Проверка пароля:</label>
+		<input type="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+		<span>Пол:</span>
+		<input type="radio" name="state" id="male" value="Мужской">
+		<label for="male">Mужской</label>
+		<input type="radio" name="state" id="female" value="Женский">
+		<label for="female">Женский</label><br><br>
+		<input type="submit" name="submit" value="Готово">
+	</form>	
+
+	<br>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
