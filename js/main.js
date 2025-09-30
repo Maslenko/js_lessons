@@ -334,7 +334,12 @@ var name = document.getElementById('name').value;
 	return false; //Страница не перезагрузится, пока не будет возвращено true.
 }*/
 
-function checkForm(el) {
+document.getElementById('main-form').addEventListener("submit", checkForm);
+
+function checkForm(event) {
+	event.preventDefault(); //Отключаем стандартное поведение страницы. Чтобы страница не перезагружалась после нажатия кнопки "Готово" 
+	var el = document.getElementById('main-form');
+
 	var name = el.name.value; 
 	var pass = el.pass.value; 
 	var repass = el.repass.value; 
@@ -359,8 +364,6 @@ function checkForm(el) {
 		alert("Всё заполнил правильно.");
 		window.location = 'https://itproger.com';
 	}	 	 	 
-
-	return false; 
 }
 
 
