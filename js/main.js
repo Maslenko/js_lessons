@@ -336,7 +336,29 @@ var name = document.getElementById('name').value;
 
 function checkForm(el) {
 	var name = el.name.value; 
-	console.log(name); 
+	var pass = el.pass.value; 
+	var repass = el.repass.value; 
+	var state = el.state.value; 
+	//console.log("Имя: " + name + "- " + "Пол: " + state + " - " + "Пароль: " + pass + " - " + "Правильный пароль: " + repass); 
+
+	var fail = "";
+
+	if(name == "" || pass == "" || state == "")
+		fail = "Заполните все поля!";
+	else if(name.length <=2 || name.length > 50)
+		fail = "Введите корректное имя!"; 
+	else if(pass != repass)
+		fail = "Пароли не совпадают!";
+	else if(pass.split("&").length > 1)	
+		fail = "Неправильный пароль!";
+
+	if(fail != "")   //если не равна пустой строке	
+		document.getElementById('error').innerHTML = fail; 
+
+	 else {
+		alert("Всё заполнил правильно.");
+		window.location = 'https://itproger.com';
+	}	 	 	 
 
 	return false; 
 }
