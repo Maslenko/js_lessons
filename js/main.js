@@ -328,13 +328,18 @@ for(var e = 0; e < spans.length; e++) {
 	console.log(spans[e].innerHTML); 
 }
 
-function checkForm(el) {
+/*function checkForm(el) {
 var name = document.getElementById('name').value; 
 	console.log(name); 
 	return false; //Страница не перезагрузится, пока не будет возвращено true.
+}*/
+
+function checkForm(el) {
+	var name = el.name.value; 
+	console.log(name); 
+
+	return false; 
 }
-
-
 
 
 
