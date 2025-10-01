@@ -367,11 +367,36 @@ function checkForm(event) {
 }
 
 
+//Таймеры и интервалы 
+
+var counter = 0;
+
+var id = setInterval(my_func, 1000); //1000 = 1sek. 	
+ 
+function my_func() {
+	counter++;
+	console.log("counter: " + counter);
+
+	if(counter == 4)
+		clearInterval(id); //остановить счет 
+} 
+
+/*var counter = 0; 
+
+setInterval(function() {
+	counter++;
+	console.log("Прошло секунд: " + counter);
+}, 1000); */ 
 
 
+//Таймер
 
+setTimeout(function() {
+	console.log("Таймер сработал!");
+}, 6000);
 
+setTimeout(func, 8000); 
 
-
-
-
+function func() {
+	console.log("Время пошло!");
+} 
