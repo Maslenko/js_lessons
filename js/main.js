@@ -400,3 +400,50 @@ setTimeout(func, 8000);
 function func() {
 	console.log("Время пошло!");
 } 
+
+//Создание объектов. Встроенные функции 
+
+var date = new Date(); 
+
+console.log(date.getFullYear()); 
+console.log(date.getMonth() + 1); // +1 т.к. считает месяцы с нуля 
+//date.setHours(0);
+//date.setMinutes(0); // Можно установить своё время 
+console.log("Время: " + date.getHours() + ":" + date.getMinutes());
+ 
+var arr_1 = [7, 5, 10, 9, 8]; 
+console.log("Длина массива " + arr_1.length); 
+//console.log(arr_1.join(", ")); //Объединить в строку
+/*console.log(arr_1.sort()); 
+console.log(arr_1.reverse().join(", "));*/
+
+var stroka_1 = arr_1.reverse().join(", ");
+console.log(stroka_1.split(", "));	 // массив превратили в строку 
+
+//создание классов и объектов на их основе 
+
+class Person {
+	constructor(name, age, money) {
+		this.name = name; 
+		this.age = age; 
+		this.money = money;  
+	}
+
+	info() {
+		console.log("Человек: " + this.name + ". Возраст: " + this.age); 
+	}	
+}
+
+var alex = new Person('Alex', 42, true); 
+var batyr = new Person('Batyr', 20, false);  
+
+batyr.name = 'Bob'; //переопределяем имя. Был Batyr стал Bob 
+
+//console.log(alex.name);
+//console.log(batyr.name);  
+
+alex.info();
+batyr.info(); 
+
+
+
